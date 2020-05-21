@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.qa-section {
+    margin-bottom: 50px;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+    padding-left: 150px;
+    padding-right: 150px;
+    border: 1px solid #6F0404;
+}
+
+.heading {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.question-section {
+    display: flex;
+    justify-content: center;
+}
+
+.answer-section {
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+
+.submit-button {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 50px;
+}
+
+.question-section .question .singleLine-question>input {
+    padding: 15px;
+    width: 400px;
+    font-size: 20px;
+    border: 1px solid #5A0943;
+}
+
+.question-section .question .multiLine-question>textarea {
+    padding: 15px;
+    width: 400px;
+    font-size: 20px;
+    resize: none;
+    border: 1px solid #581845;
+}
+
+.submit-button {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    width: 50px;
+}
+
+.submit-button a {
+    text-decoration: none;
+    border: 1px solid #21095A;
+    background-color: #095A49;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+.submit-button>a:hover {
+    background-color: #52ACFF;
+    background-image: linear-gradient(180deg, #52ACFF 25%, #FFE32C 100%);
+    color: black;
+}
+
+.mcq-question input {
+    font-size: 18px;
+    background-color: firebrick;
+}
+
+.mrq-question input {
+    font-size: 18px;
+}
+
+.reset-button {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.reset-button>a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 35px;
+    border: 1px solid #6F0404;
+    background-color: #003366;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.reset-button>a:hover {
+    background-color: #990033;
+    opacity: 1s;
+}
+
+.answer-section {
+    display: flex;
+    justify-content: center;
+    display: none;
+    background: rgb(34, 193, 195);
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-bottom: 50px;
+    border: 1px solid #6F0404;
+}
+
+.heading2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+input[type=checkbox] {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    padding: 5px;
+}
+
+input[type=radio] {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    padding: 5px;
+    color: green;
+}

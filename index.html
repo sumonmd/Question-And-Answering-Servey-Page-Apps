@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="qa-section">
+        <div class="heading">
+            <h1 class="title">
+                Question and Answer Section
+            </h1>
+
+        </div>
+        <div class="question-section">
+            <div class="question">
+                <div class="singleLine-question">
+                    <h2>1. What's your name? </h2>
+                    <input type="text" name="name" id="name" placeholder="Enter your name..." required>
+                </div>
+                <div class="mcq-question">
+                    <h2>2. What's your department in BJIT Limited ?</h2>
+                    <input type="radio" id="sd0" name="department" value="SD0">
+                    <label for="sd0">SD0</label><br>
+                    <input type="radio" id="sd1" name="department" value="SD1">
+                    <label for="sd1">SD1</label><br>
+                    <input type="radio" id="sd2" name="department" value="SD2">
+                    <label for="sd2">SD2</label><br>
+                    <input type="radio" id="sd3" name="department" value="SD3">
+                    <label for="sd3">SD3</label><br>
+                    <input type="radio" id="sd4" name="department" value="SD4">
+                    <label for="sd4">SD4</label><br><br>
+                </div>
+                <div class="mrq-question">
+                    <h2>3. What's your favorite language? </h2>
+                    <input type="checkbox" id="java" name="check" value="Java">
+                    <label for="java"> Java </label><br>
+                    <input type="checkbox" id="javascript" name="check" value="Javascript">
+                    <label for="javascript"> Javascript</label><br>
+                    <input type="checkbox" id="python" name="check" value="Python">
+                    <label for="python"> Python </label><br>
+                    <input type="checkbox" id="php" name="check" value="PHP">
+                    <label for="php"> PHP </label><br>
+                    <input type="checkbox" id="apex" name="check" value="Apex">
+                    <label for="apex"> APEX </label><br><br>
+                </div>
+                <div class="multiLine-question ">
+                    <h2>4. Please write your opinion: </h2>
+                    <textarea name="opinion" id="opinion" cols="60" rows="5" maxlength="100"></textarea>
+                </div>
+                <div class="submit-button">
+                    <a href="#" onclick="handleSubmit()">Submit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="answer-section">
+        <div class="heading2">
+            <h1 class="title">
+                Answer Section
+            </h1>
+        </div>
+        <div class="question-section">
+            <div class="question">
+                <div class="singleLine-question">
+                    <h2>1. What's your name? </h2>
+                    Answer: <span class="name"></span>
+                </div>
+                <div class="mcq-question">
+                    <h2>2. What's your department in BJIT Limited ?</h2>
+                    Answer: <span class="department"></span>
+                </div>
+                <div class="mrq-question">
+                    <h2>3. What's your favorite language ? </h2>
+                    Answer: <span class="language"></span>
+                </div>
+                <div class="multiLine-question ">
+                    <h2>4. Please Tell me something ?</h2>
+                    Answer: <span class="opinion"></span>
+                </div>
+                <div class="reset-button">
+                    <a href="#" onclick="handleReset()">Answer Again</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
